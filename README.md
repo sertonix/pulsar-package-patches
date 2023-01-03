@@ -3,7 +3,7 @@
 This is a collection of patches that fix packages for pulsar. \
 You need to have [`git`](https://git-scm.com/downloads) installed for this.
 
-# Use
+# How to use
 
 * Download the `.patch` file for a package. \
   Choose the version that is closest to the version of the package you have installed
