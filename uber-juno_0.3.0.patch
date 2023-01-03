@@ -1,0 +1,17 @@
+diff --git a/lib/incompatible-packages.js b/lib/incompatible-packages.js
+index 716ef06..e10de4b 100644
+--- a/lib/incompatible-packages.js
++++ b/lib/incompatible-packages.js
+@@ -2,9 +2,9 @@
+ 
+ export function checkIncompatible () {
+   let incompat = []
+-  for (let package of atom.packages.getLoadedPackages()) {
+-    if (!package.isCompatible()) {
+-      incompat.push(package)
++  for (let package_ of atom.packages.getLoadedPackages()) {
++    if (!package_.isCompatible()) {
++      incompat.push(package_)
+     }
+   }
+ 
