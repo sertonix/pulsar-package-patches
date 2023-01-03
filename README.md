@@ -11,3 +11,6 @@ You need to have [`git`](https://git-scm.com/downloads) installed for this.
 * Open the installation path in a terminal
 * Run `git apply "<path to patch>"`
 * Restart Pulsar
+
+Note: If you update the package the package the changes will be reverted.\
+If the update doesn't apply the patch you need to manually apply it again.
