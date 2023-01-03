@@ -9,4 +9,4 @@ Download the `.patch` file for a package. Choose the version that is closest to 
 Locate the installation path of the package.
 Open the installation path in a terminal.
 Run `git apply "<path to patch>"`.
-Use the package
+Restart Pulsar.
