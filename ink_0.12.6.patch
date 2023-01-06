@@ -1,48 +1,26 @@
 diff --git a/lib/linter/compiled-pane.js b/lib/linter/compiled-pane.js
-index 8f93f74..d41413b 100644
+index 8f93f74..f3588e3 100644
 --- a/lib/linter/compiled-pane.js
 +++ b/lib/linter/compiled-pane.js
 @@ -7,6 +7,8 @@ import { CompositeDisposable } from 'atom'
  import PaneItem from '../util/pane-item'
  import { open } from '../util/opener'
  
-+let subs
++var subs
 +
  // pane for side-to-side view of compiled code and source code
  export default class CompiledPane extends PaneItem {
    name = 'CompiledPane'
 diff --git a/lib/linter/pane.js b/lib/linter/pane.js
-index ba4239b..9e91be4 100644
+index ba4239b..8d825c3 100644
 --- a/lib/linter/pane.js
 +++ b/lib/linter/pane.js
 @@ -7,6 +7,8 @@ import { CompositeDisposable } from 'atom'
  import PaneItem from '../util/pane-item'
  import { open } from '../util/opener'
  
-+let subs
++var subs
 +
  export default class LinterPane extends PaneItem {
    name = 'LinterPane'
  
-diff --git a/lib/util/basic-modal.js b/lib/util/basic-modal.js
-index 825b9cf..e9fd599 100644
---- a/lib/util/basic-modal.js
-+++ b/lib/util/basic-modal.js
-@@ -7,14 +7,14 @@ import { TextEditor, CompositeDisposable } from 'atom'
- 
- export function showBasicModal(queries) {
-   return new Promise((resolve, reject) => {
--    subs = new CompositeDisposable()
-+    const subs = new CompositeDisposable()
- 
--    _resolve = (...args) => {
-+    const _resolve = (...args) => {
-       panel.destroy()
-       subs.dispose()
-       resolve(...args)
-     }
--    _reject = (...args) => {
-+    const _reject = (...args) => {
-       panel.destroy()
-       subs.dispose()
-       reject(...args)
