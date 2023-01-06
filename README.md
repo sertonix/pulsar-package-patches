@@ -23,4 +23,4 @@ You can use [`git`](https://git-scm.com/downloads) or apply the changes manually
 * Restart Pulsar
 
 Note: If you update the package the package the changes will be reverted.\
-If the update doesn't apply the patch you need to manually apply it again.
+If the update doesn't apply the patch you need to apply it again.
